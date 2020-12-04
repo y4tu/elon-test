@@ -1,0 +1,110 @@
+.logo {
+  display: flex;
+  position: relative;
+  width: calc(100% + 40px);
+  height: 70px;
+  justify-content: center;
+  margin: 0 -20px;
+  padding: 0 15px 0 60px;
+  align-items: center;
+
+  @media (#{$screen-tablet}) {
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+  }
+
+  @media (#{$screen-desktop}) {
+    display: flex;
+    position: relative;
+    width: 315px;
+    height: 100px;
+    justify-content: center;
+    padding: 25px 15px 35px 50px;
+    margin: 0 130px 0 0;
+    flex-shrink: 0;
+    border: 1px solid $basic-border;
+  }
+
+  &:hover img,
+  &:focus img {
+    opacity: .5;
+  }
+
+  &:hover .logo__corner--1:before,
+  &:hover .logo__corner--2:before,
+  &:hover .logo__corner--1:after,
+  &:hover .logo__corner--2:after,
+  &:focus .logo__corner--1:before,
+  &:focus .logo__corner--2:before,
+  &:focus .logo__corner--1:after,
+  &:focus .logo__corner--2:after {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.logo__corner-1 {
+  @media (#{$screen-desktop}) {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      background: transparent;
+      border-right: 1px solid $basic-white;
+      border-bottom: 1px solid $basic-white;
+      bottom: -1px;
+      right: -1px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      background: transparent;
+      border-right: 1px solid $basic-white;
+      border-top: 1px solid $basic-white;
+      top: -1px;
+      right: -1px;
+    }
+  }
+}
+
+.logo__corner-2 {
+  @media (#{$screen-desktop}) {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      background: transparent;
+      border-top: 1px solid $basic-white;
+      border-left: 1px solid $basic-white;
+      top: -1px;
+      left: -1px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      background: transparent;
+      border-bottom: 1px solid $basic-white;
+      border-left: 1px solid $basic-white;
+      bottom: -1px;
+      left: -1px;
+    }
+  }
+}
+
+.logo__img {
+  width: 274px;
+  min-width: 274px;
+  height: 36px;
+}

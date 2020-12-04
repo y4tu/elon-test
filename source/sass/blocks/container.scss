@@ -1,0 +1,18 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (#{$screen-tablet}) {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (#{$screen-desktop}) {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}

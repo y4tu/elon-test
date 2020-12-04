@@ -1,0 +1,104 @@
+.button {
+  display: block;
+  position: relative;
+  height: 60px;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to top right, $special-border, $special-border-dark, $special-border);
+  background: none;
+  color: $basic-white;
+  cursor: pointer;
+  font-family: "MuseoSansCyrl", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 0 24px;
+  margin: 65px 0 0 0;
+  outline: none;
+
+  &:hover .button__text,
+  &:focus .button__text {
+    opacity: .5;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border: 1px solid $basic-white;
+    border-bottom: none;
+    border-right: none;
+    top: -1px;
+    left: -1px;
+    box-shadow: 1px -1px 10px 0px $basic-white;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border: 1px solid $basic-white;
+    border-top: none;
+    border-left: none;
+    bottom: -1px;
+    right: -1px;
+    box-shadow: -1px 1px 10px 0px $basic-white;
+  }
+
+  @media (#{$screen-tablet}) {
+    margin: 65px 0 0 0;
+    width: 100%;
+    max-width: 450px;
+
+    &:before {
+      border: 1px solid $basic-white;
+      border-bottom: none;
+      border-left: none;
+      left: calc(100% - 4px);
+    }
+
+    &:after {
+      border: 1px solid $basic-white;
+      border-top: none;
+      border-right: none;
+      right: calc(100% - 4px);
+    }
+  }
+
+  @media (#{$screen-desktop}) {
+    display: block;
+    height: 35px;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top right, $special-border, $special-border-dark, $special-border);
+    background: none;
+    color: $basic-white;
+    cursor: pointer;
+    font-family: "MuseoSansCyrl", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    padding: 0 24px;
+    margin: 140px 0 0 0;
+    width: 100%;
+    max-width: 180px;
+
+    &:before {
+      border: 1px solid $basic-white;
+      border-bottom: none;
+      border-left: none;
+      left: 174px;
+    }
+
+    &:after {
+      border: 1px solid $basic-white;
+      border-top: none;
+      border-right: none;
+      right: 174px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+//GLOBAL
+@import "normalize";
+@import "variables";
+//@import "fonts";
+@import "visually-hidden";
+@import "global";
+@import "mixin";
+@import "blocks/container";
+//@import "blocks/button";
+
+//PAGE
+@import "blocks/page";
+
+//HEADER
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav";
+
+//MAIN
+@import "blocks/main";
+@import "blocks/advantages";
+@import "blocks/button";
+
+
