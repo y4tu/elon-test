@@ -1,2 +1,2 @@
 # elon-test
-To start project run 'npm run start'.
+Run 'npm install' to install all dependecies. After installing run 'npm run start' to start project.
