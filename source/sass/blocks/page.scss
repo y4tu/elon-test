@@ -5,18 +5,18 @@
   flex-direction: column;
   align-items: center;
   background:
-    fixed url("/../img/space-star-wallpaper.png") repeat center,
-    url("/../img/mars-kosmos-korabl.jpg") no-repeat center 220px,
-    fixed url("/../img/background-pattern.jpg") repeat;
+    fixed url("./../img/space-star-wallpaper.png") repeat center,
+    url("./../img/mars-kosmos-korabl.jpg") no-repeat center 220px,
+    fixed url("./../img/background-pattern.jpg") repeat;
   background-size: auto;
   height: 802px;
 
   @media (#{$screen-tablet}) {
     min-width: 768px;
     background:
-      fixed url("/../img/space-star-wallpaper.png") repeat center,
-      fixed url("/../img/mars-kosmos-korabl.jpg") no-repeat center 175px,
-      fixed url("/../img/background-pattern.jpg") repeat;
+      fixed url("./../img/space-star-wallpaper.png") repeat center,
+      fixed url("./../img/mars-kosmos-korabl.jpg") no-repeat center 175px,
+      fixed url("./../img/background-pattern.jpg") repeat;
     background-size: auto;
   }
 
@@ -26,9 +26,9 @@
     align-items: center;
     min-width: 1440px;
     background:
-      fixed url("/../img/space-star-wallpaper.png") repeat center,
-      fixed url("/../img/mars-kosmos-korabl.jpg") no-repeat center 145px,
-      fixed url("/../img/background-pattern.jpg") repeat;
+      fixed url("./../img/space-star-wallpaper.png") repeat center,
+      fixed url("./../img/mars-kosmos-korabl.jpg") no-repeat center 145px,
+      fixed url("./../img/background-pattern.jpg") repeat;
     background-size: auto;
   }
 }
